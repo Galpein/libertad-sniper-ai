@@ -1,4 +1,5 @@
 import React from 'react';
+import fotoPerfil from './perfil.png';
 import { 
   TrendingUp, 
   Target, 
@@ -43,8 +44,8 @@ const App = () => {
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/3 bg-slate-800 flex items-center justify-center p-8 relative overflow-hidden group">
               {/* Placeholder para la foto */}
-              <div className="w-48 h-48 rounded-2xl bg-slate-700 border-4 border-amber-500/20 flex items-center justify-center relative z-10 transition-transform group-hover:scale-105">
-                <User size={80} className="text-slate-500" />
+              <div className="w-48 h-48 rounded-2xl bg-slate-700 border-4 border-amber-500/20 flex items-center justify-center relative z-10 transition-transform group-hover:scale-105 overflow-hidden">
+                <img src={fotoPerfil} alt="Álvaro Galán" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent flex items-end justify-center p-4">
                   <span className="text-xs font-bold text-amber-500 uppercase">Foto: Álvaro Galán</span>
                 </div>
